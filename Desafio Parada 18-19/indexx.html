@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alterar a Cor de Fundo</title>
+    <style>
+        body {
+            transition: background-color 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alterar a Cor de Fundo</h1>
+
+    <label for="cor">Escolha uma cor - digite o nome em inglês:</label>
+    <input type="text" id="cor" />
+
+    <button onclick="mudarCor()">Mudar a Cor</button>
+
+    <script>
+        function mudarCor() {
+            // Obter o valor do input de cor
+            var corEscolhida = document.getElementById('cor').value;
+
+            // Alterar a cor de fundo do body
+            document.body.style.backgroundColor = corEscolhida;
+        }
+    </script>
+</body>
+</html>
